@@ -1,0 +1,32 @@
+= Hong API
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+== 글 단건 조회
+
+=== 요청
+
+include::{snippets}/board-inquiry/http-request.adoc[]
+
+include::{snippets}/board-inquiry/path-parameters.adoc[]
+
+=== 응답
+
+include::{snippets}/board-inquiry/http-response.adoc[]
+
+include::{snippets}/board-inquiry/response-fields.adoc[]
+
+== 글 작성
+
+=== 요청
+
+include::{snippets}/board-create/http-request.adoc[]
+
+include::{snippets}/board-create/request-fields.adoc[]
+
+=== 응답
+include::{snippets}/board-create/http-response.adoc[]
