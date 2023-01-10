@@ -1,7 +1,8 @@
 <script setup lang="ts">
+
 import {ref} from "vue";
 import axios from 'axios';
-import {useRouter} from "vue-router";
+import { useRouter } from "vue-router";
 
 const title = ref("")
 const content = ref("")
@@ -14,7 +15,7 @@ const write = function() {
     content: content.value,
   })
       .then(() => {
-        router.replace({name:"home"});
+        router.replace({name: "home" });
       })
 };
 </script>
@@ -23,13 +24,14 @@ const write = function() {
   <div>
     <el-input v-model="title" placeholder="제목을 입력해주세요"/>
   </div>
-  <div>
     <div class="mt-2">
     <el-input v-model="content" type = "textarea" rows="15"/>
     </div>
-  </div>
+
   <div class="mt-2">
-  <el-button type="primary" @click="write()">등록</el-button>
+    <div class="d-flex justify-content-end">
+      <el-button type="primary" @click="write()">등록</el-button>
+    </div>
   </div>
 </template>
 
